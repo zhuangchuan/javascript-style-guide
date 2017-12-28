@@ -1,10 +1,10 @@
-# Airbnb JavaScript Style Guide() {  
+# **rules**
 
-*用更合理的方式写 JavaScript*
+*代码规范*
 
 ## <a name="table-of-contents">目录</a>
 
-  1. [类型](#types)
+  1. [semi](#semi)
   1. [对象](#objects)
   1. [数组](#arrays)
   1. [字符串](#strings)
@@ -36,7 +36,7 @@
   1. [贡献者](#contributors)
   1. [许可](#license)
 
-## <a name="types">类型</a>
+## <a name="semi">semi</a>
 
   - **原始值**: 存取直接作用于它自身。
 
@@ -279,7 +279,7 @@
     }());
     ```
 
-  - 永远不要在一个非函数代码块（if、while 等）中声明一个函数，浏览器允许你这么做，但它们的解析表现不一致，正确的做法是：在块外定义一个变量，然后将函数赋值给它。
+  - 永远不要在一个非函数代码块（if、while 等）中声明一个函数，浏览器允许你这么做，但它们的解析表现不一致，正确的做法是：在块外定义一个变量，然后将函数赋值给它。
   - **注：** ECMA-262 把 `块` 定义为一组语句。函数声明不是语句。[阅读对 ECMA-262 这个问题的说明](http://www.ecma-international.org/publications/files/ECMA-ST/Ecma-262.pdf#page=97)。
 
     ```javascript
